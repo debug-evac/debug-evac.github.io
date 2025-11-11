@@ -20,7 +20,7 @@ github_username: "debug-evac"
 #########################################################################################
 theme: "minima"
 
-rss: rss
+rss: RSS Feed
 
 kramdown:
   syntax_highlighter_opts:
