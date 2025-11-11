@@ -1,12 +1,23 @@
 title: "Steven's Blog"
-author: "debug-evac"
+author:
+  name: debug-evac
+  email: ''
+#author: "debug-evac"
 description: "A blog about computer stuff!" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+
+minima:
+  skin: dark
+  show_excerpts: true
+  social_links:
+    - title: debug-evac at GitHub
+      icon: github
+      url: "https://github.com/debug-evac"
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 #email: "example@mail.com"
 #twitter_username: "twitteruser"
-github_username: "debug-evac"
+#github_username: "debug-evac"
 #linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
@@ -18,13 +29,15 @@ github_username: "debug-evac"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+# theme: "minima"
+remote_theme: "jekyll/minima@bf9ef98"
 
-rss: RSS Feed
+#rss: RSS Feed
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 titles_from_headings:
   strip_title: true
@@ -33,6 +46,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
