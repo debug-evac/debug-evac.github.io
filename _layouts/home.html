@@ -33,8 +33,12 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt }}
+	{%- if site.minima.show_excerpts and post.excerpt contains '</p>' -%}
+	{{ post.excerpt | remove: '</p>' }}
+	{%- if post.content.size > post.excerpt.size -%}
+	<a href="{{ post.url | relative_url }}">... read more</a>
+	{%- endif -%}
+	</p>
         {%- endif -%}
       </li>
       {%- endfor -%}
