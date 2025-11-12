@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Hi and welcome to my.. rather empty.. blog!
 
-Maybe say a some things about yourself.
+Here you can (or will be able to) read more about topics surrounding computers.
 
-Or maybe what you plan to blog about.
+Networking, self-hosting, setups and more!
